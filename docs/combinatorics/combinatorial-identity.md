@@ -31,7 +31,7 @@ $$
 1. $\mathrm{C}_n^r = \mathrm{C}_n^{n-r}$
 2. $\mathrm{C}_{n+1}^{r+1} = \mathrm{C}_n^{r+1} + \mathrm{C}_n^r$
 3. $r\mathrm{C}_n^r = n\mathrm{C}_{n-1}^{r-1}$
-4. $\mathrm{C}_n^r\mathrm{C}_r^m = \mathrm{C}_n^m\mathrm{C}_{n-m}^{r-m} = \mathrm{C}_n^{r-m}\mathrm{C}_{n-r+m}^m$ （ $m \le r \le n$ ）
+4. $\mathrm{C}_n^r\mathrm{C}_r^m = \mathrm{C}_n^m\mathrm{C}_{n-m}^{r-m} = \mathrm{C}_n^{r-m}\mathrm{C}_{n-r+m}^m$（$m \leqslant r \leqslant n$）
 5. $\mathrm{C}_r^r + \mathrm{C}_{r+1}^r + \cdots + \mathrm{C}_{r+k}^r = \mathrm{C}_{r+k+1}^{r+1}$
 6. $\mathrm{C}_n^0 + \mathrm{C}_n^1 + \cdots + \mathrm{C}_n^n = 2^n$
 7. $\mathrm{C}_n^0 - \mathrm{C}_n^1 + \mathrm{C}_n^2 - \mathrm{C}_n^3 + \cdots + (-1)^n\mathrm{C}_n^n = 0$
@@ -75,7 +75,7 @@ $$
 
 ### $n$ 维空间和组合数
 
-$n$ 维空间（$n \ge 1,\, n \in \mathbf{N}^*$）有 $k$ 个超平面，则最多将 $n$ 维空间分为多少块？
+$n$ 维空间（$n \geqslant 1,\, n \in \mathbf{N}^*$）有 $k$ 个超平面，则最多将 $n$ 维空间分为多少块？
 
 可以举几个例子，这里不证明：
 1. 例如 $n$ 个点最多将直线分为 $n+1$ 份（一维空间）
