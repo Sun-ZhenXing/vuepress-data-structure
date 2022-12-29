@@ -47,6 +47,18 @@ export default defineUserConfig({
       katex: true,
       mermaid: true,
       delay: 200,
+      stylize: [
+        {
+          matcher: '@def',
+          replacer: ({ tag }) => {
+            if (tag === 'em') return {
+              tag: 'Badge',
+              attrs: { type: 'tip', vertical: 'middle' },
+              content: '定义'
+            }
+          }
+        }
+      ]
     }),
     searchProPlugin({}),
     copyCodePlugin({
