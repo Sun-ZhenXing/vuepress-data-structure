@@ -42,7 +42,7 @@ export default defineUserConfig({
       sup: true,
       footnote: true,
       mark: true,
-      imageLazyload: true,
+      imgLazyload: true,
       tasklist: true,
       katex: true,
       mermaid: true,
