@@ -13,8 +13,12 @@ footer: 算法和数据结构笔记合集，由 @Sun-ZhenXing 创建
 
 # 算法和数据结构笔记
 
-1. [基础数学知识](./basic-math/)
-2. [动态规划](./dynamic-programming/)
+1. [算法分析](./algorithm-analysis/)
+2. [基础数学知识](./basic-math/)
 3. [常见算法](./common-algorithms/)
 4. [组合数学](./combinatorics/)
-5. [路径规划](./path-planning/)
+5. [动态规划](./dynamic-programming/)
+
+## 相关领域
+
+1. [路径规划](./path-planning/)
