@@ -18,6 +18,7 @@ footer: 算法和数据结构笔记合集，由 @Sun-ZhenXing 创建
 3. [常见算法](./common-algorithms/)
 4. [组合数学](./combinatorics/)
 5. [动态规划](./dynamic-programming/)
+6. [图论](./graph-theory/)
 
 ## 相关领域
 
