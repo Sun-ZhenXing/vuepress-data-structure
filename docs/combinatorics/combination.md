@@ -87,4 +87,4 @@ $$
 2. $\mathrm{C}_{n+1}^m = \mathrm{C}_n^m+\mathrm{C}_n^{m-1}$
 3. $\mathrm{C}_n^0 - \mathrm{C}_n^1 + \mathrm{C}_n^2 - \mathrm{C}_n^3 + \cdots + (-1)^n\mathrm{C}_n^n = 0$
 
-更多的性质可以阅读 [组合恒等式](./combinatorial-identity.md)
+其证明和更多的性质可以阅读 [组合恒等式](./combinatorial-identity.md)。

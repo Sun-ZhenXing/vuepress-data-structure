@@ -7,7 +7,7 @@ description: 柯西不等式
 
 ## 1. 柯西不等式内容
 
-设 $a \in \mathbf{R},\, i = 1,\,2,\,\cdots,\,n$  则
+设 $a \in \mathbf{R},\, i = 1,\,2,\,\cdots,\,n$ 则
 
 $$
 \left(\sum_{i=1}^n a_i b_i\right)^2 \leqslant

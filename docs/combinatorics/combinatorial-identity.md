@@ -29,7 +29,35 @@ $$
 ## 2. 常见的组合性质
 
 1. $\mathrm{C}_n^r = \mathrm{C}_n^{n-r}$
+    ::: details 证明
+    基本性质之一
+    $$
+    \begin{aligned}
+        \mathrm{C}_n^r &= \frac{n!}{r!\,(n-r)!} \\
+        &= \frac{n!}
+        {\left(n-r\right)!\left(n-\left(n-r\right)\right)!} \\
+        &= \mathrm{C}_n^{n-r}
+    \end{aligned}
+    $$
+    :::
 2. $\mathrm{C}_{n+1}^{r+1} = \mathrm{C}_n^{r+1} + \mathrm{C}_n^r$
+    ::: details 证明
+    基本性质之一
+    $$
+        \begin{aligned}
+        \mathrm{C}_{n+1}^{r+1}
+        &= \frac{(n+1)!}{(r+1)!\,(n-r)!} \\
+        &= \frac{n!\left(n+1\right)}
+        {\left(r+1\right)!\left(n-r-1\right)!
+        \left(n-r\right)} \\
+        &= \mathrm{C}_n^{r+1}\cdot\frac{n+1}{n-r} \\
+        &= \mathrm{C}_n^{r+1}+\mathrm{C}_n^{r+1}\cdot
+        \frac{r+1}{n-r} \\
+        &= \mathrm{C}_n^{r+1}+\frac{n!}{r!\left(n-r\right)!} \\
+        &= \mathrm{C}_n^{r+1} + \mathrm{C}_n^r
+    \end{aligned}
+    $$
+    :::
 3. $r\mathrm{C}_n^r = n\mathrm{C}_{n-1}^{r-1}$
 4. $\mathrm{C}_n^r\mathrm{C}_r^m = \mathrm{C}_n^m\mathrm{C}_{n-m}^{r-m} = \mathrm{C}_n^{r-m}\mathrm{C}_{n-r+m}^m$（$m \leqslant r \leqslant n$）
 5. $\mathrm{C}_r^r + \mathrm{C}_{r+1}^r + \cdots + \mathrm{C}_{r+k}^r = \mathrm{C}_{r+k+1}^{r+1}$
@@ -72,6 +100,8 @@ $$
     &= \sum_{i=0}^{\lfloor n/2 \rfloor} \mathrm{C}_{n-i}^{i}
 \end{aligned}
 $$
+
+关于斐波那契数列的有关性质，阅读 [斐波那契数列](./fibonacci.md)。
 
 ### $n$ 维空间和组合数
 

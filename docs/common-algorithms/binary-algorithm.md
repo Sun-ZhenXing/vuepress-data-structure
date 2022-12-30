@@ -48,7 +48,6 @@ def binary_search(arr: list[int], key: int) -> int:
     r = len(arr) - 1
     while l <= r:
         mid = l + (r - l) // 2
-        print(mid)
         if arr[mid] < key:
             l = mid + 1
         elif arr[mid] > key:
