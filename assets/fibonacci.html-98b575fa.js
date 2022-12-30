@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-2ff9b25e","path":"/combinatorics/fibonacci.html","title":"斐波那契数列","lang":"zh-CN","frontmatter":{"title":"斐波那契数列","description":"斐波那契数列"},"headers":[],"git":{"updatedTime":1672302566000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"combinatorics/fibonacci.md"}');export{t as data};

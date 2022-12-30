@@ -1,1 +1,0 @@
-import{_ as t,p as a,q as c,R as e,t as o}from"./framework-35149b8f.js";const n={},r=e("h1",{id:"斐波那契数列",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#斐波那契数列","aria-hidden":"true"},"#"),o(" 斐波那契数列")],-1),s=[r];function _(i,d){return a(),c("div",null,s)}const h=t(n,[["render",_],["__file","fibonacci.html.vue"]]);export{h as default};
