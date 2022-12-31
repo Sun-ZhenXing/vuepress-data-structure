@@ -23,6 +23,9 @@ export default defineUserConfig({
     logo: '/favicon.svg',
     repo: `${USER_NAME}${BASE_PATH}`,
     docsDir: 'docs',
+    editLinkText: '在 GitHub 上编辑此页',
+    contributorsText: '贡献者',
+    lastUpdatedText: '上次更新',
     navbar: [
     ],
     sidebar: {
