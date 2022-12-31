@@ -80,14 +80,27 @@ $$
 
 :::
 
-【推论 2】设 $x_i,\,y_i \in \mathbf{R}$，则
+【推论 2】设 $x_i \in \mathbf{R},\,y_i > 0$，则
 
 $$
 \sum_{i=1}^n y_i\sum_{i=1}^n \frac{x_i^2}{y_i} \geqslant
 \left(\sum_{i=1}^n x_i\right)^2
 $$
 
-证明略，这是柯西不等式的分数形式，也是权方和不等式的一个特例。
+这是柯西不等式的分数形式，也是权方和不等式的一个特例。
+
+::: details 证明
+
+令 $a_i = \dfrac{x_i}{\sqrt{y_i} },\,b_i = \sqrt{y_i}$，则柯西不等式变形为
+
+$$
+\sum_{i=1}^n y_i\sum_{i=1}^n \frac{x_i^2}{y_i} \geqslant
+\left(\sum_{i=1}^n x_i\right)^2
+$$
+
+结论得证。
+
+:::
 
 ## 附录：构造函数证明柯西不等式
 
