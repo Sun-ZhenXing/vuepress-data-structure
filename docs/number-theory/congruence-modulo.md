@@ -12,7 +12,7 @@ description: 同余
 显然
 $$
 a \equiv b \pmod m \Leftrightarrow
-a = km+b\,(k \in \mathbf{Z}) \Leftrightarrow
+a = km+b\,(k \in \mathbb{Z}) \Leftrightarrow
 m \mid (a-b)
 $$
 
@@ -29,8 +29,8 @@ $$
 3. $a \equiv b\pmod m,\, b \equiv c \pmod m\Rightarrow a \equiv c \pmod m$（传递性）
 4. $a \equiv b\pmod m,\, c \equiv d \pmod m\Rightarrow a \pm c \equiv b \pm d \pmod m$
 5. $a \equiv b\pmod m,\, c \equiv d \pmod m\Rightarrow ac \equiv bd \pmod m$
-    - 特别地 $a \equiv b \pmod m \Rightarrow ak \equiv bk \pmod m,\,k \in \mathbf{Z}$
-    - 反复运用上面的结论，得 $a \equiv b \pmod m \Rightarrow a^n \equiv b^n \pmod m,\,n \in \mathbf{N}$
+    - 特别地 $a \equiv b \pmod m \Rightarrow ak \equiv bk \pmod m,\,k \in \mathbb{Z}$
+    - 反复运用上面的结论，得 $a \equiv b \pmod m \Rightarrow a^n \equiv b^n \pmod m,\,n \in \mathbb{N}$
 6. 若 $ac \equiv bc \pmod m$ 
     - 当 $(c,\,m) = 1$ 时，$a \equiv b \pmod m$
     - 当 $(c,\,m) = d$ 时，$a \equiv b \pmod {m/d}$
@@ -71,20 +71,20 @@ $$
 
 ### 3.1 剩余类定义
 
-*@def* 设 $m \in \mathbf{N}^+$，把全体整数按对模 $m$ 的余数进行分类，余数为 $r(0 \leqslant r \leqslant m - 1)$ 的所有整数归为一类，记为 $K_r$，$K_r$ 称为模 $m$ 的一个 **剩余类**（$r = 0,\,1,\,2,\,\cdots,\,m-1$）。
+*@def* 设 $m \in \mathbb{N}^+$，把全体整数按对模 $m$ 的余数进行分类，余数为 $r(0 \leqslant r \leqslant m - 1)$ 的所有整数归为一类，记为 $K_r$，$K_r$ 称为模 $m$ 的一个 **剩余类**（$r = 0,\,1,\,2,\,\cdots,\,m-1$）。
 
 显然，$K_r$ 是一个以 $m$ 为公差的无穷等差数集，即
 
 $$
 K_r = \left\{qm+r \mid m \text{ 是模},\,r \text{ 是余数},\,
-q \in \mathbf{Z} \right\}
+q \in \mathbb{Z} \right\}
 $$
 
 ### 3.2 剩余类性质
 
-1. $\mathbf{Z} = K_0 \cup K_1 \cup \cdots \cup K_{m-1}$，且 $K_i \cap K_j = \emptyset,\, i \neq j$
-2. 对任意的 $n \in \mathbf{N}$，有唯一的 $r_0$ 使 $n \in K_{r_0}$
-3. 对任意的 $a,\,b \in \mathbf{Z}$ 有 $a,\,b \in K_r \Leftrightarrow a \equiv b\pmod m$
+1. $\mathbb{Z} = K_0 \cup K_1 \cup \cdots \cup K_{m-1}$，且 $K_i \cap K_j = \emptyset,\, i \neq j$
+2. 对任意的 $n \in \mathbb{N}$，有唯一的 $r_0$ 使 $n \in K_{r_0}$
+3. 对任意的 $a,\,b \in \mathbb{Z}$ 有 $a,\,b \in K_r \Leftrightarrow a \equiv b\pmod m$
 
 ### 3.3 完全剩余系
 
