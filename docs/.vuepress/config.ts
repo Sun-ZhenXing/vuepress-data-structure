@@ -65,7 +65,7 @@ export default defineUserConfig({
     }),
     searchProPlugin({}),
     copyCodePlugin({
-      showInMobile: true,
-    }),
+      showInMobile: true
+    })
   ]
 })
