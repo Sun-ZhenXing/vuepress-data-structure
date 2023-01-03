@@ -5,7 +5,7 @@ description: 快速幂
 
 # 快速幂
 
-**快速幂**（Exponentiation by squaring，平方求幂）是一种简单而有效的小算法，它可以以 $O(\log n)$ 的时间复杂度计算 $a^n$，而暴力的计算需要 $O(n)$ 的时间。[^1][^2]
+**快速幂**（Exponentiation by squaring，平方求幂）是一种简单而有效的小算法，它可以以 $\mathcal{O}(\log n)$ 的时间复杂度计算 $a^n$，而暴力的计算需要 $\mathcal{O}(n)$ 的时间。[^1][^2]
 
 [^1]: io-wiki，快速幂，<https://oi-wiki.org/math/quick-pow/>
 
@@ -186,7 +186,7 @@ A^{n-1} \begin{bmatrix}
 \end{bmatrix}
 $$
 
-这样，我们可以在 $O(\log n)$ 的时间内计算斐波那契数了。
+这样，我们可以在 $\mathcal{O}(\log n)$ 的时间内计算斐波那契数了。
 
 ## 4. 求矩阵的快速幂
 

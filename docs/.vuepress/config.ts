@@ -60,6 +60,16 @@ export default defineUserConfig({
               content: '定义'
             }
           }
+        },
+        {
+          matcher: '@TODO',
+          replacer: ({ tag }) => {
+            if (tag === 'em') return {
+              tag: 'Badge',
+              attrs: { type: 'danger', vertical: 'middle' },
+              content: 'TODO'
+            }
+          }
         }
       ]
     }),

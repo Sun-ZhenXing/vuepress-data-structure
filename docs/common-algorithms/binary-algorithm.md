@@ -11,9 +11,9 @@ description: 二分算法
 
 [^1]: oi-wiki，二分，<https://oi-wiki.org/basic/binary/>
 
-二分查找的最优时间复杂度为 $O(1)$。二分查找的平均、最坏时间复杂度均为 $O(\log n)$。因为在二分搜索过程中，算法每次都把查询的区间减半，所以对于一个长度为 $n$ 的数组，至多会进行 $O(\log n)$ 次查找。
+二分查找的最优时间复杂度为 $\mathcal{O}(1)$。二分查找的平均、最坏时间复杂度均为 $\mathcal{O}(\log n)$。因为在二分搜索过程中，算法每次都把查询的区间减半，所以对于一个长度为 $n$ 的数组，至多会进行 $\mathcal{O}(\log n)$ 次查找。
 
-迭代法空间复杂度为：$O(1)$，而递归法为 $O(\log n)$。
+迭代法空间复杂度为：$\mathcal{O}(1)$，而递归法为 $\mathcal{O}(\log n)$。
 
 ## 2. 代码实现
 
@@ -53,8 +53,7 @@ def binary_search(arr: list[int], key: int) -> int:
         elif arr[mid] > key:
             r = mid - 1
         else:
-            res = mid
-            break
+            return res
     return res
 ```
 

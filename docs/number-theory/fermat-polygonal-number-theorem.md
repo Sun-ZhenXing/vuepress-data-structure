@@ -48,7 +48,7 @@ $$
 1. 答案为 $1$ 时，则必有 $n$ 为完全平方数
 2. 答案为 $2$ 时，则有 $n=a^2+b^2$，我们只需要枚举所有的 $a(1 \leqslant a \leqslant \sqrt{n})$，判断 $n-a^2$ 是否为完全平方数
 
-时间复杂度为 $O(\sqrt{n})$，空间复杂度为 $O(1)$。
+时间复杂度为 $\mathcal{O}(\sqrt{n})$，空间复杂度为 $\mathcal{O}(1)$。
 ::: code-tabs#code
 
 @tab cpp
@@ -131,7 +131,7 @@ $$
 \mathrm{dp}[i] = 1 + \min_{j=1}^{\left\lfloor\sqrt{i}\right\rfloor} \mathrm{dp}[i-j^2]
 $$
 
-时间复杂度 $O(n\sqrt{n})$，空间复杂度 $O(n)$。
+时间复杂度 $\mathcal{O}(n\sqrt{n})$，空间复杂度 $\mathcal{O}(n)$。
 
 ::: code-tabs#code
 
