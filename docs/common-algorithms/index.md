@@ -7,4 +7,5 @@ description: 常见算法
 
 1. [快速幂](./fast-power.md)
 2. [二分算法](./binary-algorithm.md)
+3. [差分数组](./difference-arrays.md)
 
