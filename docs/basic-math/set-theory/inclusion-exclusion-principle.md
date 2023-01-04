@@ -29,7 +29,7 @@ $$
 
 ## 2. 容斥公式
 
-设 $A_i$ 为有限集，则
+*@theorem-1* 设 $A_i$ 为有限集，则
 
 $$
 \begin{aligned}
@@ -43,9 +43,9 @@ $$
 
 ## 3. 筛法公式
 
-【引理 1】设 $A$ 关于全集 $U$ 的补集为 $\overline{A}$，则 $\left|A\right| + \left|\overline{A}\right| = \left|U\right|$
+*@inference-1* 设 $A$ 关于全集 $U$ 的补集为 $\overline{A}$，则 $\left|A\right| + \left|\overline{A}\right| = \left|U\right|$
 
-【引理 2】德·摩根定律
+*@inference-2* 德·摩根定律
 
 $$
 \begin{aligned}
@@ -56,7 +56,7 @@ $$
 \end{aligned}
 $$
 
-【定理 2】
+*@theorem-2*
 
 $$
 \begin{aligned}

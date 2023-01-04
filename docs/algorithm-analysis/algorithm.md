@@ -65,19 +65,19 @@ description: 算法
 4. 对于任意正数 $c$ 都存在 $n_0$，使得 $n \geqslant n_0$ 时有 $0 \leqslant cg(n) < f(n)$ 成立，则 $f(n) = \omega(g(n))$
 5. $f(n) = O(g(n))$ 且 $f(n) = \Omega(g(n))$，则记作 $f(n) = \Theta(g(n))$
 
-【定理】设 $f$ 和 $g$ 是定义域为自然数集 $\mathbb{N}$ 上的非负函数，那么有：
+*@theorem* 设 $f$ 和 $g$ 是定义域为自然数集 $\mathbb{N}$ 上的非负函数，那么有：
 1. 如果 $\lim\limits_{n \to \infty}\dfrac{f(n)}{g(n)}$ 存在，并且等于某个常数 $c > 0$，那么 $f(n) = \Theta(g(n))$
 2. 如果 $\lim\limits_{n \to \infty}\dfrac{f(n)}{g(n)} = 0$，那么 $f(n) = o(g(n))$
 3. 如果 $\lim\limits_{n \to \infty}\dfrac{f(n)}{g(n)} = +\infty$，那么 $f(n) = \omega(g(n))$
 
-【定理】设 $f,\,g,\,h$ 是定义域为自然数集 $\mathbb{N}$ 上的函数，那么有：
+*@theorem* 设 $f,\,g,\,h$ 是定义域为自然数集 $\mathbb{N}$ 上的函数，那么有：
 1. 如果 $f = O(g)$ 且 $g = O(h)$，那么 $f = O(h)$
 2. 如果 $f = \Omega(g)$ 且 $g = \Omega(h)$，那么 $f = \Omega(h)$
 3. 如果 $f = \Theta(g)$ 且 $g = \Theta(h)$，那么 $f = \Theta(h)$
 
-【定理】设 $f$ 和 $g$ 是定义域为自然数集 $\mathbb{N}$ 上的函数，若对于某个其他函数 $h$，有 $f = O(h)$ 和 $g = O(h)$，那么 $f + g = O(h)$。
+*@theorem* 设 $f$ 和 $g$ 是定义域为自然数集 $\mathbb{N}$ 上的函数，若对于某个其他函数 $h$，有 $f = O(h)$ 和 $g = O(h)$，那么 $f + g = O(h)$。
 
-【定理】对于每个 $b > 1$ 和每个 $a > 0$，有 $\log_b n = o(n^a)$。
+*@theorem* 对于每个 $b > 1$ 和每个 $a > 0$，有 $\log_b n = o(n^a)$。
 
 对数的另一条性质是：对于不同的底 $a$ 与 $b$，$\log_a n = \Theta(\log_b n)$，只需要使用对数的基本恒等式
 
@@ -87,7 +87,7 @@ $$
 
 即可证明。通常我们以 $\log n$ 指以 $2$ 为底的对数。
 
-【定理】对于每一个 $r > 1$ 和每一个 $d > 0$，有 $n^d = o(r^n)$。
+*@theorem* 对于每一个 $r > 1$ 和每一个 $d > 0$，有 $n^d = o(r^n)$。
 
 阶乘函数 $f(n) = n!$ 是增长很快的函数，根据 [斯特林公式](./stirling-s-approximation.md)，阶乘函数
 
@@ -114,8 +114,6 @@ $$
 
 下面列举常见函数的界的大小比较结果，从高到低排序：
 
-::: center
-
 | 函数                                 |
 | ------------------------------------ |
 | $2^{2^n}$                            |
@@ -131,8 +129,6 @@ $$
 | $\sqrt{\log n}$                      |
 | $\log \log n$                        |
 | $n^{1/\log n} = \Theta(1)$           |
-
-:::
 
 取整函数也是常见的一类函数，向下取整函数 $\lfloor x\rfloor$ 相当于 C 语言的 `floor(x)`，向上取整函数 $\lceil x\rceil$ 相当于 C 语言的 `ceil(x)`。
 

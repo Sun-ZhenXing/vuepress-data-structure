@@ -70,6 +70,26 @@ export default defineUserConfig({
               content: 'TODO'
             }
           }
+        },
+        {
+          matcher: /@theorem(?:-[0-9]{1,2})?/,
+          replacer: ({ tag, content }) => {
+            if (tag === 'em') return {
+              tag: 'Badge',
+              attrs: { type: 'warning', vertical: 'middle' },
+              content: content.includes('-') ? `定理 ${content.replace('@theorem-', '')}` : '定理'
+            }
+          }
+        },
+        {
+          matcher: /@inference(?:-[0-9]{1,2})?/,
+          replacer: ({ tag, content }) => {
+            if (tag === 'em') return {
+              tag: 'Badge',
+              attrs: { type: 'warning', vertical: 'middle' },
+              content: content.includes('-') ? `推论 ${content.replace('@inference-', '')}` : '推论'
+            }
+          }
         }
       ]
     }),

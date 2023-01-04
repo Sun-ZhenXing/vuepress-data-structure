@@ -53,7 +53,7 @@ $$
 
 ## 2. 重要结论
 
-【推论 1】设 $a_i \in \R$，则
+*@inference-1* 设 $a_i \in \R$，则
 
 $$
 \frac{\sum_{i=1}^n a_i}{n} \leqslant
@@ -80,7 +80,7 @@ $$
 
 :::
 
-【推论 2】设 $x_i \in \R,\,y_i > 0$，则
+*@inference-2* 设 $x_i \in \R,\,y_i > 0$，则
 
 $$
 \sum_{i=1}^n y_i\sum_{i=1}^n \frac{x_i^2}{y_i} \geqslant
