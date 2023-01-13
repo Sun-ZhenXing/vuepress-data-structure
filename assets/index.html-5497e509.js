@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7fa3e1a2","path":"/basic-math/","title":"基础数学知识","lang":"zh-CN","frontmatter":{"title":"基础数学知识","description":"基础数学知识"},"headers":[],"git":{"updatedTime":1673598015000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":3}]},"filePathRelative":"basic-math/index.md"}');export{t as data};
