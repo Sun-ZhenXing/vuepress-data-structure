@@ -3,7 +3,7 @@ home: true
 heroImage: /favicon.svg
 actions:
   - text: 开始阅读
-    link: /basic-math/
+    link: '#算法和数据结构笔记'
     type: primary
 features:
   - title: VuePress
