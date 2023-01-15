@@ -28,6 +28,8 @@ $$
 
 ## 2. 常见的组合性质
 
+对于下面的 $n \geqslant 0$，且各组合数满足定义约束。
+
 1. $\mathrm{C}_n^r = \mathrm{C}_n^{n-r}$
     ::: details 证明
     基本性质之一
@@ -44,7 +46,7 @@ $$
     ::: details 证明
     基本性质之一
     $$
-        \begin{aligned}
+    \begin{aligned}
         \mathrm{C}_{n+1}^{r+1}
         &= \frac{(n+1)!}{(r+1)!\,(n-r)!} \\
         &= \frac{n!\left(n+1\right)}
@@ -59,10 +61,46 @@ $$
     $$
     :::
 3. $r\mathrm{C}_n^r = n\mathrm{C}_{n-1}^{r-1}$
-4. $\mathrm{C}_n^r\mathrm{C}_r^m = \mathrm{C}_n^m\mathrm{C}_{n-m}^{r-m} = \mathrm{C}_n^{r-m}\mathrm{C}_{n-r+m}^m$（$m \leqslant r \leqslant n$）
-5. $\mathrm{C}_r^r + \mathrm{C}_{r+1}^r + \cdots + \mathrm{C}_{r+k}^r = \mathrm{C}_{r+k+1}^{r+1}$
-6. $\mathrm{C}_n^0 + \mathrm{C}_n^1 + \cdots + \mathrm{C}_n^n = 2^n$
-7. $\mathrm{C}_n^0 - \mathrm{C}_n^1 + \mathrm{C}_n^2 - \mathrm{C}_n^3 + \cdots + (-1)^n\mathrm{C}_n^n = 0$
+    ::: details 证明
+    $$
+    \begin{aligned}
+        r\mathrm{C}_n^r &=
+        \frac{r \cdot n!}{r!\left(n-r\right)!} \\
+        &= \frac{n \cdot \left(n-1\right)!}
+        {\left(r-1\right)!\left(n-r\right)!} \\
+        &= n\mathrm{C}_{n-1}^{r-1}
+    \end{aligned}
+    $$
+    :::
+4. $\mathrm{C}_n^0 + \mathrm{C}_n^1 + \cdots + \mathrm{C}_n^n = 2^n$
+    ::: details 证明
+    根据二项式定理，有
+    $$
+    \left(1+1\right)^n = \mathrm{C}_n^0 + \mathrm{C}_n^1 + \cdots + \mathrm{C}_n^n = 2^n
+    $$
+    :::
+5. $\mathrm{C}_n^0 - \mathrm{C}_n^1 + \mathrm{C}_n^2 - \mathrm{C}_n^3 + \cdots + (-1)^n\mathrm{C}_n^n = 0$
+    ::: details 证明
+    根据二项式定理，有
+    $$
+    \left(1-1\right)^n = \mathrm{C}_n^0 - \mathrm{C}_n^1 + \mathrm{C}_n^2 - \mathrm{C}_n^3 + \cdots + (-1)^n\mathrm{C}_n^n = 0
+    $$
+    :::
+6. $1\mathrm{C}_n^1 + 2\mathrm{C}_n^2 + 3\mathrm{C}_n^3 + \cdots + n\mathrm{C}_n^n = n \cdot 2^{n-1}$
+    ::: details 证明
+    $$
+    \begin{aligned}
+        \mathrm{LHS}
+        &= \sum_{k=1}^n k \frac{n!}{k!\left(n-k\right)!} \\
+        &= \sum_{k=1}^n n \frac{\left(n-1\right)!}
+        {\left(k-1\right)!\left(n-k\right)!} \\
+        &= n\sum_{k=1}^n \mathrm{C}_{n-1}^{k-1} \\
+        &= n \cdot 2^{n-1}
+    \end{aligned}
+    $$
+    :::
+7. $\mathrm{C}_n^r\mathrm{C}_r^m = \mathrm{C}_n^m\mathrm{C}_{n-m}^{r-m} = \mathrm{C}_n^{r-m}\mathrm{C}_{n-r+m}^m$（$m \leqslant r \leqslant n$）
+8. $\mathrm{C}_r^r + \mathrm{C}_{r+1}^r + \cdots + \mathrm{C}_{r+k}^r = \mathrm{C}_{r+k+1}^{r+1}$
 
 常用结论
 
@@ -70,7 +108,7 @@ $$
 \begin{aligned}
     \mathrm{C}_{n+m}^k &= \mathrm{C}_m^0\mathrm{C}_n^k +
     \mathrm{C}_m^1\mathrm{C}_n^{k-1} + \cdots +
-    \mathrm{C}_m^k\mathrm{C}_n^0 \tag{1}
+    \mathrm{C}_m^k\mathrm{C}_n^0
 \end{aligned}
 $$
 
@@ -80,7 +118,7 @@ $$
 \begin{aligned}
     \mathrm{C}_{2n}^n &= \left(\mathrm{C}_n^0\right)^2 +
     \left(\mathrm{C}_n^1\right)^2 + \cdots +
-    \left(\mathrm{C}_n^n\right)^2 \tag{2}
+    \left(\mathrm{C}_n^n\right)^2
 \end{aligned}
 $$
 

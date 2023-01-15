@@ -61,7 +61,7 @@ $$
 $$
 \begin{aligned}
     \mathrm{C}_n^m
-    &= \frac{n!}{m!\,(n-m)!} \\
+    &= \frac{n!}{m!\left(n-m\right)!} \\
     &= \frac{n(n-1)(n-2)\cdots(n-m+1)}{m(m-1)\cdots 2\cdot 1}
 \end{aligned}
 $$
