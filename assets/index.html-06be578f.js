@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-05030461","path":"/basic-math/inequality/","title":"不等式","lang":"zh-CN","frontmatter":{"title":"不等式","description":"不等式"},"headers":[],"git":{"updatedTime":1672146325000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"basic-math/inequality/index.md"}');export{t as data};
