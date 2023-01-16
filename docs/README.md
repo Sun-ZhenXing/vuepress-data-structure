@@ -20,6 +20,7 @@ footer: 算法和数据结构笔记合集，由 @Sun-ZhenXing 创建
 5. [动态规划](./dynamic-programming/)
 6. [图论](./graph-theory/)
 7. [数论](./number-theory/)
+8. [概率与统计](./probability-and-statistics/)
 
 ## 相关领域
 

@@ -1,6 +1,6 @@
 ---
-title: 0-1 背包
-description: 0-1 背包
+title: 完全背包
+description: 完全背包
 ---
 
 # 完全背包
@@ -11,47 +11,22 @@ description: 0-1 背包
 
 完全背包和 0-1 背包在未使用滚动数组时很相似，只不过遍历背包大小时必须要正序遍历。
 
-<div class="hint-container tip">
-
-<p class="hint-container-title">遍历方式对比</p>
+::: tip 遍历方式对比
 
 0-1 背包：
 
-::: code-tabs#code
-
-@tab cpp
-
 ```cpp
-dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + value[i]);
-```
-
-@tab python
-
-```python
 dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + value[i])
 ```
 
-:::
 
 完全背包：
 
-::: code-tabs#code
-
-@tab cpp
-
 ```cpp
-dp[i][j] = max(dp[i - 1][j], dp[i][j - weight[i]] + value[i]);
-```
-
-@tab python
-
-```python
 dp[i][j] = max(dp[i - 1][j], dp[i][j - weight[i]] + value[i])
 ```
 
 :::
-
-</div>
 
 注意到：完全背包的项是 `dp[i][j - weight[i]] + value[i]`，这是因为这个项是从可能已经选择了这个物品这个状态推导出来的，而 `dp[i - 1][j - weight[i]] + value[i]` 则是不可能选择这个物品的状态。根据表达式，在遍历时必须正序遍历。
 
