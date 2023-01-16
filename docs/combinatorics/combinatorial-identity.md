@@ -100,7 +100,44 @@ $$
     $$
     :::
 7. $\mathrm{C}_n^r\mathrm{C}_r^m = \mathrm{C}_n^m\mathrm{C}_{n-m}^{r-m} = \mathrm{C}_n^{r-m}\mathrm{C}_{n-r+m}^m$（$m \leqslant r \leqslant n$）
+    ::: details 证明
+    $$
+    \begin{aligned}
+        \mathrm{LHS}
+        &= \frac{n!}{r!\left(n-r\right)!} \cdot
+        \frac{r!}{m!\left(r-m\right)!} \\
+        &= \frac{n!}{m!\left(n-m\right)!} \cdot
+        \frac{\left(n-m\right)!}
+        {\left(n-r\right)!\left(r-m\right)!} \\
+        &= \mathrm{C}_n^m\mathrm{C}_{n-m}^{r-m}
+    \end{aligned}
+    $$
+    $$
+    \begin{aligned}
+        \mathrm{LHS}
+        &= \frac{n!}{r!\left(n-r\right)!} \cdot
+        \frac{r!}{m!\left(r-m\right)!} \\
+        &= \frac{n!}{\left(r-m\right)!\left(n-r+m\right)!} \cdot \frac{\left(n-r+m\right)!}{m!\left(n-r\right)!} \\
+        &= \mathrm{C}_n^{r-m}\mathrm{C}_{n-r+m}^m
+    \end{aligned}
+    $$
+    :::
 8. $\mathrm{C}_r^r + \mathrm{C}_{r+1}^r + \cdots + \mathrm{C}_{r+k}^r = \mathrm{C}_{r+k+1}^{r+1}$
+    ::: details 证明
+    每两项拆开可以和下一项合并：
+    $$
+    \begin{aligned}
+        \mathrm{LHS}
+        &= \left(\mathrm{C}^{r+1}_{r+1}+
+        \mathrm{C}^{r}_{r+1}\right) + \mathrm{C}_{r+2}^r
+        + \cdots + \mathrm{C}_{r+k}^r \\
+        &= \mathrm{C}^{r+1}_{r+2} + \mathrm{C}^{r}_{r+2}
+        + \cdots + \mathrm{C}_{r+k}^r \\
+        & \cdots \\
+        &= \mathrm{C}_{r+k+1}^{r+1}
+    \end{aligned}
+    $$
+    :::
 
 常用结论
 
@@ -116,7 +153,11 @@ $$
 
 $$
 \begin{aligned}
-    \mathrm{C}_{2n}^n &= \left(\mathrm{C}_n^0\right)^2 +
+    \mathrm{C}_{2n}^n
+    &= \mathrm{C}_n^0\mathrm{C}_n^n +
+    \mathrm{C}_n^1\mathrm{C}_n^{n-1} + \cdots +
+    \mathrm{C}_n^n\mathrm{C}_n^0 \\
+    &= \left(\mathrm{C}_n^0\right)^2 +
     \left(\mathrm{C}_n^1\right)^2 + \cdots +
     \left(\mathrm{C}_n^n\right)^2
 \end{aligned}
