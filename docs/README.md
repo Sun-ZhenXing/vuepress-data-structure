@@ -22,6 +22,7 @@ footer: 算法和数据结构笔记合集，由 @Sun-ZhenXing 创建
 7. [数论](./number-theory/)
 8. [概率与统计](./probability-and-statistics/)
 9. [树](./trees/)
+10. [博弈论](./game-theory/)
 
 ## 相关领域
 
