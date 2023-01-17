@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1b4ab288","path":"/game-theory/","title":"博弈论","lang":"zh-CN","frontmatter":{"title":"博弈论","description":"博弈论"},"headers":[],"git":{"updatedTime":1673924746000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"game-theory/index.md"}');export{e as data};
