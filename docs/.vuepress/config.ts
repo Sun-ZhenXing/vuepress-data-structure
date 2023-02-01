@@ -29,8 +29,7 @@ export default defineUserConfig({
     lastUpdatedText: '上次更新',
     navbar: [
     ],
-    sidebar: {
-    }
+    sidebar: 'auto'
   }),
   plugins: [
     mdEnhancePlugin({
@@ -57,7 +56,7 @@ export default defineUserConfig({
           replacer: ({ tag }) => {
             if (tag === 'em') return {
               tag: 'Badge',
-              attrs: { type: 'tip', vertical: 'middle' },
+              attrs: { type: 'tip' },
               content: '定义'
             }
           }
@@ -67,7 +66,7 @@ export default defineUserConfig({
           replacer: ({ tag }) => {
             if (tag === 'em') return {
               tag: 'Badge',
-              attrs: { type: 'danger', vertical: 'middle' },
+              attrs: { type: 'danger' },
               content: 'TODO'
             }
           }
@@ -77,7 +76,7 @@ export default defineUserConfig({
           replacer: ({ tag, content }) => {
             if (tag === 'em') return {
               tag: 'Badge',
-              attrs: { type: 'warning', vertical: 'middle' },
+              attrs: { type: 'warning' },
               content: content.includes('-') ? `定理 ${content.replace('@theorem-', '')}` : '定理'
             }
           }
@@ -87,7 +86,7 @@ export default defineUserConfig({
           replacer: ({ tag, content }) => {
             if (tag === 'em') return {
               tag: 'Badge',
-              attrs: { type: 'warning', vertical: 'middle' },
+              attrs: { type: 'warning' },
               content: content.includes('-') ? `推论 ${content.replace('@inference-', '')}` : '推论'
             }
           }
