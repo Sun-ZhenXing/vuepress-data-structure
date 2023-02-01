@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e4d6f294","path":"/compilation-principle/","title":"编译原理","lang":"zh-CN","frontmatter":{"title":"编译原理","description":"编译原理"},"headers":[],"git":{"updatedTime":1675266524000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"compilation-principle/index.md"}');export{e as data};
