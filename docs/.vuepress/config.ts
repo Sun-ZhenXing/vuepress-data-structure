@@ -92,7 +92,7 @@ export default defineUserConfig({
           }
         }
       ]
-    }),
+    }, false),
     searchProPlugin({}),
     autoCatalogPlugin({}),
     copyCodePlugin({
