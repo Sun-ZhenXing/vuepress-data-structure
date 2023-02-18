@@ -233,10 +233,6 @@ while (value != 100) {
 
 *@def* **语法分析树**（Parse Tree）描述了语句子的具体结构。例如上一节的英语翻译为中文的例子中，语法分析树可以表示为：
 
-![](./images/parse-tree.svg)
-
-::: details Mermaid 图示
-
 ```mermaid
 graph TD
     ROOT("句子")
@@ -279,8 +275,6 @@ graph TD
     C22 --> C222
     C222 --> C2221 & C2222
 ```
-
-:::
 
 ### 1.4.2 赋值语句分析树
 
