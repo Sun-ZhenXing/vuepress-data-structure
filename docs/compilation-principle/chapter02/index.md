@@ -256,7 +256,7 @@ $$
 
 ## 2.3 语言的定义
 
-### 2.3.1 推导（Derivations）和 归约（Reductions）
+### 2.3.1 推导和归约
 
 *@def* 给定文法 $G = (V_T,V_N,P,S)$，如果 $\alpha \to \beta \in P$，那么可以将符号串 $\gamma\alpha\delta$ 中的 $\alpha$ 替换为 $\beta$，也就是说，将 $\gamma\alpha\delta$ **重写**（Rewrite）为 $\gamma\beta\delta$，记作 $\gamma\alpha\delta \Rightarrow \gamma\beta\delta$。
 
@@ -264,7 +264,7 @@ $$
 
 简而言之，推导就是利用尝试的右部替换产生式的左部。
 
-*@def* 如果 $\alpha _0 \Rightarrow \alpha _1,\, \alpha _1 \Rightarrow \alpha _2,\, \alpha _2 \Rightarrow \alpha _3,\, \cdots,\, \alpha _{n-1} \Rightarrow \alpha _n$ 则可以记作 $\alpha _0 \Rightarrow \alpha _1\Rightarrow \alpha _2\Rightarrow \alpha _3\Rightarrow \cdots \Rightarrow \alpha _n$，称符号串 $\alpha _0$ 经过 $n$ 部推导出 $\alpha _n$，可简记为 $\alpha \Rightarrow ^n \alpha _n$
+*@def* 如果 $\alpha _0 \Rightarrow \alpha _1,\, \alpha _1 \Rightarrow \alpha _2,\, \alpha _2 \Rightarrow \alpha _3,\, \cdots,\, \alpha _{n-1} \Rightarrow \alpha _n$ 则可以记作 $\alpha _0 \Rightarrow \alpha _1\Rightarrow \alpha _2\Rightarrow \alpha _3\Rightarrow \cdots \Rightarrow \alpha _n$，称符号串 $\alpha _0$ 经过 $n$ 部 **推导**（Derivations）出 $\alpha _n$，可简记为 $\alpha \Rightarrow ^n \alpha _n$
 
 - $\alpha \Rightarrow ^0 \alpha$ 没有推导
 - $\Rightarrow^+$ 表示经过正数步骤的推导
@@ -285,7 +285,7 @@ $$
 \end{aligned}
 $$
 
-自顶向下的过程是推导，自底向上的过程是归约。
+*@def* 自顶向下的过程是推导，自底向上的过程是 **归约**（Reductions）。
 
 有了文法，如何判定某一个词串是否是该语言的句子。
 
