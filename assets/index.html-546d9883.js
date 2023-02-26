@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-03a27c45","path":"/probability-and-statistics/","title":"概率与统计","lang":"zh-CN","frontmatter":{"title":"概率与统计","description":"概率与统计"},"headers":[],"git":{"updatedTime":1673876043000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"probability-and-statistics/index.md"}');export{t as data};

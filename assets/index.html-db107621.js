@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2e3b5af0","path":"/basic-math/set-theory/","title":"集合论","lang":"zh-CN","frontmatter":{"title":"集合论","description":"集合论"},"headers":[],"git":{"updatedTime":1673785122000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":4}]},"filePathRelative":"basic-math/set-theory/index.md","excerpt":""}');export{t as data};

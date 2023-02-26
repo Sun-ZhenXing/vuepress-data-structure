@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-c0d2ed16","path":"/basic-data-structures/stack.html","title":"栈","lang":"zh-CN","frontmatter":{"title":"栈","description":"栈"},"headers":[],"git":{"updatedTime":1673930107000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"basic-data-structures/stack.md"}');export{t as data};
