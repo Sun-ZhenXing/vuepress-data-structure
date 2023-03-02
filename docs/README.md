@@ -29,3 +29,4 @@ footer: 算法和数据结构笔记合集，由 @Sun-ZhenXing 创建
 
 1. [编译原理](./compilation-principle/)
 2. [路径规划](./path-planning/)
+3. [竞赛指南](./contest-tutorial/)
