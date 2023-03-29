@@ -394,11 +394,11 @@ while (stack 非空) {
 - $letter\_ \rightarrow A \mid B \mid \cdots \mid Z \mid a \mid b \mid \cdots \mid z \mid \_$
 - $id \rightarrow letter\_(letter\_ \mid digit)^*$
 
-识别数字
+识别数字：
 - 识别无符号数字（整数或者浮点数）
 - 识别浮点数
 
-识别无符号整数
+识别无符号整数：
 - 十进制整数的 RE：`[1-9][0-9]*|0`
 - 八进制整数的 RE：`0[1-7][0-7]*`（不含 `0`）
 - 十六进制整数的 RE：`0(x|X)[1-9a-fA-F][0-9a-fA-F]*`（不含 `0`）
@@ -418,10 +418,10 @@ while (stack 非空) {
 词法分析阶段可以检测到的错误类型。
 
 1. 单词拼写错误
-```cpp
-int i = 0x3G;
-float j = 1.05e;
-```
+    ```cpp
+    int i = 0x3G;
+    float j = 1.05e;
+    ```
 2. 非法字符，例如 `@ ~`
 
 词法错误检测，如果当前状态与当前输入符号在转换表对应项中的信息为空，则报错，调用错误处理程序。
