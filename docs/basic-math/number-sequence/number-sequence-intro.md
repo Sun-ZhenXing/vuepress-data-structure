@@ -1,8 +1,3 @@
----
-title: 数列简介
-description: 数列简介
----
-
 # 数列简介
 
 [[TOC]]

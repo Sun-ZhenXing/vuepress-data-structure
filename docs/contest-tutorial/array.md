@@ -1,8 +1,3 @@
----
-title: 数组优化
-description: 数组优化
----
-
 # 数组优化
 
 [[TOC]]

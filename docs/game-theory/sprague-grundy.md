@@ -1,8 +1,3 @@
----
-title: SG 定理
-description: SG 定理
----
-
 # SG 定理
 
 [[TOC]]

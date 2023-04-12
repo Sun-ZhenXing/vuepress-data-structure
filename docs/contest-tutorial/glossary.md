@@ -1,8 +1,3 @@
----
-title: 术语表
-description: 术语表
----
-
 # 术语表
 
 [[TOC]]

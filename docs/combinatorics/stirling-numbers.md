@@ -1,8 +1,3 @@
----
-title: 斯特林数
-description: 斯特林数
----
-
 # 斯特林数
 
 在数学中，**斯特林数**（Stirling）用于解决各种数学分析和组合数学问题，斯特林数是两组不同的数，均是 18 世纪由 [詹姆斯·斯特林](https://en.wikipedia.org/wiki/James_Stirling_(mathematician)) 引入并以其命名，以第一类斯特林数和第二类斯特林数的称呼区分。此外，有时候也将拉赫数称为第三类斯特林数。[^1]

@@ -23,5 +23,8 @@
     "vuepress-plugin-copy-code2": "2.0.0-beta.199",
     "vuepress-plugin-md-enhance": "2.0.0-beta.199",
     "vuepress-plugin-search-pro": "2.0.0-beta.199"
+  },
+  "dependencies": {
+    "function-plot": "^1.23.2"
   }
 }

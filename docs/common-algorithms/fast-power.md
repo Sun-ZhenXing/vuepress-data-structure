@@ -1,8 +1,3 @@
----
-title: 快速幂
-description: 快速幂
----
-
 # 快速幂
 
 **快速幂**（Exponentiation by squaring，平方求幂）是一种简单而有效的小算法，它可以以 $\mathcal{O}(\log n)$ 的时间复杂度计算 $a^n$，而暴力的计算需要 $\mathcal{O}(n)$ 的时间。[^1][^2]

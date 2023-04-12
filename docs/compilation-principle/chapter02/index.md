@@ -1,8 +1,3 @@
----
-title: 第 2 章：程序设计语言及其文法
-description: 第 2 章：程序设计语言及其文法
----
-
 <!-- 写作指导：
 
 本文档由 MarkDown + LaTeX 数学公式编写，如果你正在编辑这份文档，请参考 `docs/compilation-principle/gen_tool.py` 提供的帮助，提高工作效率。
