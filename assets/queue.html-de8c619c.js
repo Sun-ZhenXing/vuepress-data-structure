@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-ce803ee8","path":"/basic-data-structures/queue.html","title":"队列","lang":"zh-CN","frontmatter":{"title":"队列","description":"队列"},"headers":[],"git":{"updatedTime":1673930107000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"basic-data-structures/queue.md","excerpt":""}');export{e as data};

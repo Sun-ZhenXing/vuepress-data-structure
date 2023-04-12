@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-1b9a47b4","path":"/basic-math/balanced-ternary.html","title":"平衡三进制","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681300570000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":2}]},"filePathRelative":"basic-math/balanced-ternary.md","excerpt":""}');export{a as data};

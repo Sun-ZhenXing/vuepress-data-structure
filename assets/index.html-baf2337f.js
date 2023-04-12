@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-ed464c86","path":"/dynamic-programming/","title":"动态规划","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681300570000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":3}]},"filePathRelative":"dynamic-programming/index.md","excerpt":""}');export{e as data};

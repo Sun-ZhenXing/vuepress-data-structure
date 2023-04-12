@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-c76359b8","path":"/basic-data-structures/","title":"基础数据结构","lang":"zh-CN","frontmatter":{"title":"基础数据结构","description":"基础数据结构"},"headers":[],"git":{"updatedTime":1673930107000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"basic-data-structures/index.md","excerpt":""}');export{t as data};

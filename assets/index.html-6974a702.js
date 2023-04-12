@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-373d6f8e","path":"/basic-math/number-sequence/","title":"数列","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681300570000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":3}]},"filePathRelative":"basic-math/number-sequence/index.md","excerpt":""}');export{e as data};

@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as i,R as e,t as o}from"./framework-8980b429.js";const n={},r=e("h1",{id:"二项分布",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#二项分布","aria-hidden":"true"},"#"),o(" 二项分布")],-1),s=[r];function c(_,d){return a(),i("div",null,s)}const h=t(n,[["render",c],["__file","binomial-distribution.html.vue"]]);export{h as default};

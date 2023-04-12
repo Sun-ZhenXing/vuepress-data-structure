@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2ac76582","path":"/contest-tutorial/","title":"竞赛指南","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681300570000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":2}]},"filePathRelative":"contest-tutorial/index.md","excerpt":""}');export{t as data};

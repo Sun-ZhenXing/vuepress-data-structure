@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-4258002b","path":"/combinatorics/","title":"组合数学","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681300570000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":4}]},"filePathRelative":"combinatorics/index.md","excerpt":""}');export{t as data};
