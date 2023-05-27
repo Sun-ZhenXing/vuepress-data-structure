@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5a15346c","path":"/data-structures/linked-list.html","title":"链表","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1685172226000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"data-structures/linked-list.md","excerpt":""}');export{t as data};
