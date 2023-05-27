@@ -6,7 +6,7 @@
 
 解除 `stdio` 同步：
 
-```c++
+```cpp
 std::ios::sync_with_stdio(false);
 std::cin.tie(nullptr);
 ```

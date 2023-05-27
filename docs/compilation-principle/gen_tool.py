@@ -11,7 +11,7 @@ def gen_grammer(s: str, align_center=False) -> str:
 
     输入：
 
-    ```log
+    ```text
     <句子>      -> <动词短语>
     <动词短语>  -> <动词> <名词短语>
     <名词短语>  -> <名词> <名词短语>|<名词>

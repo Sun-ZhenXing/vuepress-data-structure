@@ -1,4 +1,4 @@
-# 词法分析
+# 3. 词法分析
 
 [[TOC]]
 
@@ -23,6 +23,7 @@ $$
 正则表达式可以由较小的正则表达式按照特定的规则递归地构建。每个正则表达式 $r$ 定义表示一个语言，记为 $L(r)$。这个语言也是根据 $r$ 的子表达式所表示的语言递归定义的。
 
 定义：
+
 - $\varepsilon$ 是一个正则表达式（下面简称为 RE），$L(\varepsilon) = \{\varepsilon\}$
 - 如果 $a \in \Sigma$，则 $a$ 是一个 RE，$L(a) = \{a\}$
 - 如果 $r,\, s$ 都是 RE，它们表示的语言是 $L(r),\,L(s)$，那么
@@ -40,6 +41,7 @@ $$
 $$
 
 那么：
+
 - $L(a \mid b) = L(a)\cup L(b) = \{a\}\cup\{b\} = \{a,\, b\}$
 - $L((a \mid b)(a \mid b)) = L(a \mid b)L(a \mid b) = \{a,\,b\}\{a,\,b\} = \{aa,\, ab,\, ba,\, bb\}$
 - $L(a^*) = (L(a))^* = \{a\}^* = \{\varepsilon,\, a,\, aa,\, aaa,\, \cdots\}$
@@ -62,7 +64,7 @@ C 语言无符号整数：
 | $r\left(st\right) = \left(rs\right)t$                                        |        连接是可结合的        |
 | $r\left(s \mid t\right) = rs \mid rt$，$\left(s \mid t\right)r = sr \mid tr$ |        连接是可分配的        |
 | $εr = rε = r$                                                                | $\varepsilon$ 是连接的单位元 |
-| $r* = \left(r \mid ε\right)^*$                                               | 闭包中一定包含 $\varepsilon$ |
+| $r*=\left(r \mid ε\right)^*$                                                 | 闭包中一定包含 $\varepsilon$ |
 | $r^{**} = r^*$                                                               |        $*$ 具有幂等性        |
 
 ### 3.1.2 正则表达式与正则文法是等价的
@@ -85,6 +87,7 @@ d_n \rightarrow r_n
 $$
 
 其中：
+
 - 这里的每一个 $d_i$ 都是一个新符号，他们都不在字母表 $\Sigma$ 中，且各不相同
 - 每个 $r_i$ 是字母表 $\Sigma \cup \{d_1,\,d_2,\,\cdots,\,d_{i-1}\}$ 上的正则表达式
 
@@ -107,6 +110,7 @@ $$
 ### 3.3.2 FA 的典型例子
 
 电梯控制装置：
+
 - 输入：顾客的乘电梯需求
 - 状态：电梯所处位置和运动方向
 

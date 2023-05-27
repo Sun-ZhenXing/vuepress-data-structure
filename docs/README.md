@@ -15,7 +15,7 @@ footer: 算法和数据结构笔记合集，由 @Sun-ZhenXing 创建
 
 1. [算法分析](./algorithm-analysis/)
 2. [基础数学知识](./basic-math/)
-3. [基础数据结构](./basic-data-structures/)
+3. [基础数据结构](./data-structures/)
 4. [常见算法](./common-algorithms/)
 5. [组合数学](./combinatorics/)
 6. [动态规划](./dynamic-programming/)
@@ -30,3 +30,9 @@ footer: 算法和数据结构笔记合集，由 @Sun-ZhenXing 创建
 1. [编译原理](./compilation-principle/)
 2. [路径规划](./path-planning/)
 3. [竞赛指南](./contest-tutorial/)
+
+::: details 全部目录
+
+<AutoCatalog />
+
+:::

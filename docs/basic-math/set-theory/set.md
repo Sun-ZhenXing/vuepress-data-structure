@@ -15,7 +15,7 @@
 *@def* **集合相等** 被定义为集合内的每一个元素都对应相等，即
 
 $$
-\left(\forall\, a \in A,\, a \in B\right)\text{ and }
+\left(\forall\, a \in A,\, a \in B\right),\,
 \left(\forall\, b \in B,\, b \in A\right)
 \Leftrightarrow A = B
 $$
@@ -39,6 +39,7 @@ $$
 ### 1.2 集合的表示
 
 集合的表示在数学上并无严格定义，一般来说有下面几种：
+
 1. 列举法
 2. 描述法
 3. 图示法
@@ -52,7 +53,7 @@ $$
 描述法使用 $\left\{x\mid P(x)\right\}$ 格式来表示集合，用处较广，其中 $P(x)$ 表示具有某性质的描述，$x$ 是描述符，例如
 
 $$
-\left\{x \mid x \in \R \text{ and } x > \sqrt{\pi}\right\}
+\left\{x \mid x \in \R,\, x > \sqrt{\pi}\right\}
 $$
 
 图示法一般用于形象化的描述，一般用 [Venn 图](https://zh.wikipedia.org/wiki/%E6%96%87%E6%B0%8F%E5%9B%BE) 来表示。在不太严格的意义下用以表示集合（或类）的一种图解。
@@ -121,15 +122,15 @@ $$
 *@def* 集合的减法即集合的 **差集**，其定义如下
 
 $$
-A - B = A \backslash B
-\left\{x \mid x \in A \text{ and } x \notin B\right\}
+A - B = A \backslash B =
+\left\{x \mid x \in A,\, x \notin B\right\}
 $$
 
 *@def* 集合的乘法即集合的 **交集**，其定义如下
 
 $$
 A \cdot B = A \cap B =
-\left\{x \mid x \in A \text{ and } x \in B\right\}
+\left\{x \mid x \in A,\, x \in B\right\}
 $$
 
 对多个集合依次取并集记为
@@ -154,7 +155,7 @@ $$
 
 $$
 \overline{A} = \complement_U A =
-\left\{x \mid x \notin A \text{ and } x \in U\right\}
+\left\{x \mid x \notin A,\, x \in U\right\}
 $$
 
 *@def* 集合的 **对称差** 定义如下
@@ -162,7 +163,7 @@ $$
 $$
 A \oplus B
 = A \triangle B
-= \left\{ x \mid x \in A \cup B \text{ and }
+= \left\{ x \mid x \in A \cup B,\,
 x \notin A \cap B \right\}
 $$
 
@@ -192,7 +193,8 @@ $$
 
 ### 4.2 运算性质
 
-下面的性质我们不加以证明
+下面的性质我们不加以证明：
+
 1. 集合的交运算满足交换律和结合律
     $$
     \begin{aligned}

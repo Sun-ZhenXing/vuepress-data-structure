@@ -69,7 +69,7 @@ for k in range(30):
 
 结果：
 
-```log
+```yml
 [Length]:   0, [Size]:   56
 [Length]:   1, [Size]:   88
 [Length]:   2, [Size]:   88

@@ -206,7 +206,7 @@ while (value != 100) {
 
 词法分析的输出结果如下：
 
-```log:no-line-numbers
+```md:no-line-numbers
  1.  while  <WHILE, - >
  2.  (      <SLP, - >
  3.  value  <IDN, value>
@@ -476,7 +476,7 @@ while a < b do
 
 三地址码表示（`j` 表示跳转指令）
 
-```log:no-line-numbers
+```yml:no-line-numbers
 100: (j<, a, b, 102)
 101: (j , -, -, 112)
 102: (j<, c, 5, 104)
