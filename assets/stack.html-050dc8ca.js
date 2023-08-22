@@ -1,1 +1,0 @@
-import{_ as t,o as a,c as s,a as e,d as c}from"./app-98d13175.js";const o={},n=e("h1",{id:"栈",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#栈","aria-hidden":"true"},"#"),c(" 栈")],-1),r=e("nav",{class:"table-of-contents"},[e("ul")],-1),_=[n,r];function d(l,i){return a(),s("div",null,_)}const f=t(o,[["render",d],["__file","stack.html.vue"]]);export{f as default};

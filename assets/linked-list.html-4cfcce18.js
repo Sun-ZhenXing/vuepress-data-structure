@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as a,a as e,d as c}from"./app-56dc5881.js";const n={},o=e("h1",{id:"链表",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#链表","aria-hidden":"true"},"#"),c(" 链表")],-1),r=e("nav",{class:"table-of-contents"},[e("ul")],-1),_=[o,r];function d(i,l){return s(),a("div",null,_)}const f=t(n,[["render",d],["__file","linked-list.html.vue"]]);export{f as default};
