@@ -1,11 +1,11 @@
 import process from 'node:process'
-import { defineUserConfig, defaultTheme } from 'vuepress'
-import { getDirname, path } from '@vuepress/utils'
-import { mdEnhancePlugin } from 'vuepress-plugin-md-enhance'
-import { copyCodePlugin } from 'vuepress-plugin-copy-code2'
-import { autoCatalogPlugin } from 'vuepress-plugin-auto-catalog'
 import { shikiPlugin } from '@vuepress/plugin-shiki'
-import { searchProPlugin} from 'vuepress-plugin-search-pro'
+import { getDirname, path } from '@vuepress/utils'
+import { defaultTheme, defineUserConfig } from 'vuepress'
+import { autoCatalogPlugin } from 'vuepress-plugin-auto-catalog'
+import { copyCodePlugin } from 'vuepress-plugin-copy-code2'
+import { mdEnhancePlugin } from 'vuepress-plugin-md-enhance'
+import { searchProPlugin } from 'vuepress-plugin-search-pro'
 
 const __dirname = getDirname(import.meta.url)
 const isProd = process.env.NODE_ENV === 'production'
@@ -19,7 +19,7 @@ export default defineUserConfig({
   title: '算法和数据结构笔记',
   description: '算法和数据结构笔记',
   head: [
-    ['link', { rel: 'icon', href: `${BASE_PATH}favicon.svg` }]
+    ['link', { rel: 'icon', href: `${BASE_PATH}favicon.svg` }],
   ],
   base: BASE_PATH,
   markdown: {
@@ -71,7 +71,7 @@ export default defineUserConfig({
       card: true,
       codetabs: true,
       include: {
-        resolvePath: file => {
+        resolvePath: (file) => {
           if (file.startsWith('@'))
             return file.replace('@', CURRENT_PATH)
           if (file.startsWith('/'))
@@ -87,51 +87,61 @@ export default defineUserConfig({
       mark: true,
       imgLazyload: true,
       tasklist: true,
-      katex: true,
+      katex: {
+        copy: true,
+      },
       mermaid: true,
       delay: 200,
       stylize: [
         {
           matcher: '@def',
           replacer: ({ tag }) => {
-            if (tag === 'em') return {
-              tag: 'Badge',
-              attrs: { type: 'tip' },
-              content: '定义'
+            if (tag === 'em') {
+              return {
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: '定义',
+              }
             }
-          }
+          },
         },
         {
           matcher: '@TODO',
           replacer: ({ tag }) => {
-            if (tag === 'em') return {
-              tag: 'Badge',
-              attrs: { type: 'danger' },
-              content: 'TODO'
+            if (tag === 'em') {
+              return {
+                tag: 'Badge',
+                attrs: { type: 'danger' },
+                content: 'TODO',
+              }
             }
-          }
+          },
         },
         {
           matcher: /@theorem(?:-[0-9]{1,2})?/,
           replacer: ({ tag, content }) => {
-            if (tag === 'em') return {
-              tag: 'Badge',
-              attrs: { type: 'warning' },
-              content: content.includes('-') ? `定理 ${content.replace('@theorem-', '')}` : '定理'
+            if (tag === 'em') {
+              return {
+                tag: 'Badge',
+                attrs: { type: 'warning' },
+                content: content.includes('-') ? `定理 ${content.replace('@theorem-', '')}` : '定理',
+              }
             }
-          }
+          },
         },
         {
           matcher: /@inference(?:-[0-9]{1,2})?/,
           replacer: ({ tag, content }) => {
-            if (tag === 'em') return {
-              tag: 'Badge',
-              attrs: { type: 'warning' },
-              content: content.includes('-') ? `推论 ${content.replace('@inference-', '')}` : '推论'
+            if (tag === 'em') {
+              return {
+                tag: 'Badge',
+                attrs: { type: 'warning' },
+                content: content.includes('-') ? `推论 ${content.replace('@inference-', '')}` : '推论',
+              }
             }
-          }
-        }
-      ]
+          },
+        },
+      ],
     }, false),
     searchProPlugin({}),
     autoCatalogPlugin({
@@ -140,10 +150,10 @@ export default defineUserConfig({
           return routeMeta.order as number
         const prefix = title.match(/^\d+. /)
         if (prefix)
-          return parseInt(prefix[0])
+          return Number.parseInt(prefix[0])
         const suffix = title.match(/\d+$/)
         if (suffix)
-          return parseInt(suffix[0])
+          return Number.parseInt(suffix[0])
         return 0
       },
     }),

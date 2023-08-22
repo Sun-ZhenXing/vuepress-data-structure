@@ -10,7 +10,7 @@
 
 考虑到最一般的数为复数，可以作如下的定义：
 
-*@def* 一个 $a:\mathbb{N}^* \to \mathbb{C}$ 的函数被称为 **无穷数列**，可记为 $\left\{a_i\right\}_{i \in \mathbb{N}^*}$，而 $a\left(i\right)$ 会被简记为 $a_i$。
+*@def* 一个 $a:\mathbb{N}^*\to \mathbb{C}$ 的函数被称为 **无穷数列**，可记为 $\left\{a_i\right\}_{i \in \mathbb{N}^*}$，而 $a\left(i\right)$ 会被简记为 $a_i$。
 
 *@def* 若 $I_n = \left\{1,\,2,\,\cdots,\,n\right\}$，则一个 $a:I_n \to \mathbb{C}$ 的函数被称为 **有限数列**，$n$ 被称为有限数列的项数。
 
