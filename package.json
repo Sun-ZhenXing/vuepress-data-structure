@@ -12,19 +12,25 @@
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "vuepress",
+    "data-structure",
+    "algorithm"
+  ],
+  "author": "Alex Sun",
   "license": "ISC",
   "devDependencies": {
-    "@antfu/eslint-config": "^0.40.2",
-    "@vuepress/client": "2.0.0-beta.66",
-    "@vuepress/plugin-shiki": "2.0.0-beta.66",
-    "@vuepress/utils": "2.0.0-beta.66",
-    "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.66",
-    "vuepress-plugin-auto-catalog": "2.0.0-beta.235",
-    "vuepress-plugin-copy-code2": "2.0.0-beta.235",
-    "vuepress-plugin-md-enhance": "2.0.0-beta.235",
-    "vuepress-plugin-search-pro": "2.0.0-beta.235"
+    "@vuepress/client": "2.0.0-rc.0",
+    "@vuepress/plugin-shiki": "2.0.0-rc.0",
+    "@vuepress/utils": "2.0.0-rc.0",
+    "github-slugger": "^2.0.0",
+    "katex": "^0.16.9",
+    "mermaid": "^10.6.1",
+    "vue": "^3.3.8",
+    "vuepress": "2.0.0-rc.0",
+    "vuepress-plugin-auto-catalog": "2.0.0-rc.0",
+    "vuepress-plugin-copy-code2": "2.0.0-rc.0",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.0",
+    "vuepress-plugin-search-pro": "2.0.0-rc.0"
   }
 }
