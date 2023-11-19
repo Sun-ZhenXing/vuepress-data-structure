@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-111740bc","path":"/basic-math/binomial-theorem/","title":"二项式定理","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1700386423000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"basic-math/binomial-theorem/index.md","excerpt":""}');export{e as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-04bc9a7a","path":"/basic-math/probability-theory/","title":"概率论","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1700386423000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"basic-math/probability-theory/index.md","excerpt":""}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-695117e8","path":"/basic-math/trigonometric-functions/","title":"三角函数","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1700386423000,"contributors":[{"name":"Sun-ZhenXing","email":"1006925066@qq.com","commits":1}]},"filePathRelative":"basic-math/trigonometric-functions/index.md","excerpt":""}');export{t as data};
